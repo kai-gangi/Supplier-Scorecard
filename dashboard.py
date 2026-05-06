@@ -44,14 +44,7 @@ display_df = df_sorted[["Supplier", "otd_rate", "avg_lead_time_days", "defect_ra
 display_df.columns = ["Supplier", "OTD %", "Lead Time (days)", "Defect %", "Savings %", "Compliance %", "Score"]
 
 st.dataframe(
-    display_df.style.format({
-        "OTD %": "{:.2f}",
-        "Lead Time (days)": "{:.1f}",
-        "Defect %": "{:.2f}",
-        "Savings %": "{:.2f}",
-        "Compliance %": "{:.2f}",
-        "Score": "{:.2f}"
-    }).background_gradient(subset=["Score"], cmap="RdYlGn"),
+    display_df,
     use_container_width=True
 )
 

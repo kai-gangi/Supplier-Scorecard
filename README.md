@@ -1,4 +1,4 @@
-# Supplier Scorecard
+# Supplier Scorecard Dashboard
 
 A small Streamlit dashboard for reviewing supplier performance from the generated scorecard output.
 
@@ -11,6 +11,17 @@ The dashboard summarizes:
 - cost savings
 - compliance rate
 - weighted supplier score
+
+## How it is calculated
+
+- on-time delivery rate = delivered orders with delivery time <= 30 days / total delivered orders
+- average lead time = average days between order date and delivery date
+- defect rate = defective units / total ordered units
+- cost savings = average of (unit price - negotiated price) / unit price
+- compliance rate = compliant orders / total orders
+- weighted supplier score = 35% OTD + 25% quality + 20% compliance + 10% savings + 10% lead time efficiency
+
+The dashboard also shows a normalized comparison view where higher is better for quality, compliance, savings, and lead time efficiency.
 
 ## How to run
 
