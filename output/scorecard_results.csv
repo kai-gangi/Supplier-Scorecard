@@ -1,0 +1,6 @@
+Supplier,otd_rate,avg_lead_time_days,defect_rate_pct,avg_savings_pct,compliance_rate,weighted_score
+Epsilon_Group,100.0,10.5,2.97,8.04,98.19,88.65
+Alpha_Inc,100.0,10.5,2.25,8.21,93.62,87.93
+Gamma_Co,100.0,9.9,4.96,7.98,86.01,85.77
+Beta_Supplies,100.0,11.2,9.35,7.83,75.64,82.45
+Delta_Logistics,100.0,10.3,14.43,7.81,60.82,78.31
